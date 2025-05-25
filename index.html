@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بكالوريا - التعليم عن بعد</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2A5C82;
+      --secondary: #4CAF8E;
+      --accent: #FFC857;
+      --background: #F8F9FA;
+      --text: #2D3436;
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* الهيدر */
+    .main-header {
+      background: linear-gradient(135deg, var(--primary), #1E3A5F);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    /* شريط التنقل */
+    .nav-bar {
+      background: rgba(255, 255, 255, 0.97);
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      color: var(--primary);
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* قسم المواد الرئيسي */
+    .subjects-container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .subject-section {
+      margin: 4rem 0;
+    }
+
+    /* بطاقات المواد */
+    .subject-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      margin: 1.5rem 0;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-content {
+      padding: 2rem;
+    }
+
+    .preview-video {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--text);
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .see-more-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* التذييل */
+    .main-footer {
+      background: linear-gradient(135deg, var(--primary), #1E3A5F);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      .preview-video {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>مرحبا بكم في منصة البكالوريا</h1>
+    <p>التحضير الأمثل لامتحانات البكالوريا بكل سهولة</p>
+  </header>
+
+  <nav class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">الرئيسية</a>
+      <a href="economics.html" class="nav-link">الاقتصاد</a>
+      <a href="philosophy.html" class="nav-link">الفلسفة</a>
+      <a href="accounting.html" class="nav-link">المحاسبة</a>
+    </div>
+  </nav>
+
+  <main class="subjects-container">
+    <!-- قسم الاقتصاد -->
+    <section class="subject-section">
+      <h2>مادة الاقتصاد</h2>
+      <div class="subject-card">
+        <iframe class="preview-video" src="https://www.youtube.com/embed/5S5XHagx25A?si=jzwitHPiCq_h4_Mx"
+          title="مقدمة في الاقتصاد" allowfullscreen>
+        </iframe>
+        <div class="card-content">
+          <h3>المحتوى التعليمي للاقتصاد</h3>
+          <p>تشمل الدروس:
+          <ul>
+            <li>النظرية الاقتصادية الأساسية</li>
+            <li>تحليل السوق</li>
+            <li>السياسات الاقتصادية</li>
+          </ul>
+          </p>
+          <a href="economics.html" class="see-more-btn">
+            <i class="fas fa-book-open"></i> ابدأ التعلم الآن
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الف
+      <h2>مادة المحاسبة <i class="fas fa-calculator" style="color: #FFC857; font-size: 1.2em;"></i></h2>
+      <div class="subject-card">
+        <iframe class="preview-video" src="https://www.youtube.com/embed/UUJ4OXuvw7o?si=lPtTJaFOp9fl_Wc0" 
+          allowfullscreen>
+        </iframe>
+        
+       
+      </div>
+      <div class="card-content">
+        <h3>المحتوى التعليمي للمحاسبة</h3>
+        <p>تشمل الدروس:
+        <ul>
+          <li>المبادئ المحاسبية</li>
+          <li>القيد المزدوج</li>
+          <li>القيود اليومية</li>
+        </ul>
+        </p>
+        <a href="accounting.html" class="see-more-btn">
+          <i class="fas fa-calculator"></i> ابدأ التعلم الآن
+        </a>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2023 جميع الحقوق محفوظة - منصة البكالوريا</p>
+    <p>تواصل معنا: contact@bac.com</p>
+  </footer>
+</body>
+
+</html>
